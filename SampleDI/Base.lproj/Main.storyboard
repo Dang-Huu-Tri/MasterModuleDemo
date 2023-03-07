@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SampleDI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2a-We-Maj">
+                                <rect key="frame" x="134" y="109" width="125" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Open Setting"/>
+                                <connections>
+                                    <action selector="openSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mu6-N2-1Ff"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="/testhandler/default1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="N5D-Xy-JOb">
+                                <rect key="frame" x="40" y="164" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naE-CG-f2i">
+                                <rect key="frame" x="117" y="411" width="159" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start Location Services"/>
+                                <connections>
+                                    <action selector="startLocationServicePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xiA-O7-fKf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Master Module" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nax-CF-nls">
+                                <rect key="frame" x="40" y="357" width="313" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2x-zv-gJb">
+                                <rect key="frame" x="30" y="471" width="333" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Collecting Device Info"/>
+                                <connections>
+                                    <action selector="collectingDeviceInfoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJI-qx-Ley"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R2a-We-Maj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="2cg-Be-nwL"/>
+                            <constraint firstItem="nax-CF-nls" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="68w-Ya-Vsh"/>
+                            <constraint firstItem="R2a-We-Maj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AsB-UQ-Csl"/>
+                            <constraint firstItem="naE-CG-f2i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GIM-IC-Udf"/>
+                            <constraint firstItem="W2x-zv-gJb" firstAttribute="top" secondItem="naE-CG-f2i" secondAttribute="bottom" constant="30" id="Izn-zf-v9S"/>
+                            <constraint firstItem="naE-CG-f2i" firstAttribute="top" secondItem="nax-CF-nls" secondAttribute="bottom" constant="30" id="L2C-lk-qNe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W2x-zv-gJb" secondAttribute="trailing" constant="30" id="PTm-V3-pOf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nax-CF-nls" secondAttribute="trailing" constant="40" id="Q43-th-RkA"/>
+                            <constraint firstItem="N5D-Xy-JOb" firstAttribute="top" secondItem="R2a-We-Maj" secondAttribute="bottom" constant="20" id="Wg9-Uv-fkU"/>
+                            <constraint firstItem="N5D-Xy-JOb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="Z1U-pi-eXz"/>
+                            <constraint firstItem="W2x-zv-gJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="uyg-1Q-VNb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N5D-Xy-JOb" secondAttribute="trailing" constant="40" id="vhc-pk-QVy"/>
+                            <constraint firstItem="naE-CG-f2i" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wVJ-G0-KeY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="urlTextField" destination="N5D-Xy-JOb" id="NIK-KB-eY0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
