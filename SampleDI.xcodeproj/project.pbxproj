@@ -28,7 +28,7 @@
 		B247ED9D29AD04A900716AEE /* GCBundleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED6929AD04A900716AEE /* GCBundleInfo.swift */; };
 		B247ED9E29AD04A900716AEE /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED6C29AD04A900716AEE /* UIDevice+extension.swift */; };
 		B247ED9F29AD04A900716AEE /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED6D29AD04A900716AEE /* Optional+Extension.swift */; };
-		B247EDA029AD04A900716AEE /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED6E29AD04A900716AEE /* String+extension.swift */; };
+		B247EDA029AD04A900716AEE /* String+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED6E29AD04A900716AEE /* String+Router.swift */; };
 		B247EDA129AD04A900716AEE /* ByteCountFormatter+FormatBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED6F29AD04A900716AEE /* ByteCountFormatter+FormatBytes.swift */; };
 		B247EDA229AD04A900716AEE /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED7029AD04A900716AEE /* Data+Crypto.swift */; };
 		B247EDA329AD04A900716AEE /* GCLocalizationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247ED7229AD04A900716AEE /* GCLocalizationInfo.swift */; };
@@ -90,6 +90,76 @@
 		B247EEE329AF171C00716AEE /* ViewController+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247EEE229AF171C00716AEE /* ViewController+Router.swift */; };
 		B24FC90A29B5940A0072B7DF /* GCMasterModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FC90929B5940A0072B7DF /* GCMasterModuleTests.swift */; };
 		B24FC90B29B5940A0072B7DF /* GCMasterModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B247EDDF29AD052E00716AEE /* GCMasterModule.framework */; };
+		B24FCA7329B7189E0072B7DF /* GCDataBaseBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA0329B7189D0072B7DF /* GCDataBaseBuilder.swift */; };
+		B24FCA7429B7189E0072B7DF /* GCDataBaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA0529B7189D0072B7DF /* GCDataBaseProtocol.swift */; };
+		B24FCA7529B7189E0072B7DF /* GCDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA0729B7189D0072B7DF /* GCDataBase.swift */; };
+		B24FCA7629B7189E0072B7DF /* GCDeviceInfo+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA0A29B7189D0072B7DF /* GCDeviceInfo+Router.swift */; };
+		B24FCA7729B7189E0072B7DF /* GCBatteryInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA0C29B7189D0072B7DF /* GCBatteryInfoProtocol.swift */; };
+		B24FCA7829B7189E0072B7DF /* GCAppDirectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA0E29B7189D0072B7DF /* GCAppDirectories.swift */; };
+		B24FCA7929B7189E0072B7DF /* GCAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA0F29B7189D0072B7DF /* GCAppearance.swift */; };
+		B24FCA7A29B7189E0072B7DF /* GCByteCountUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1029B7189D0072B7DF /* GCByteCountUnit.swift */; };
+		B24FCA7B29B7189E0072B7DF /* ReceiptType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1129B7189D0072B7DF /* ReceiptType.swift */; };
+		B24FCA7C29B7189E0072B7DF /* GCCarrierInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1229B7189D0072B7DF /* GCCarrierInfo.swift */; };
+		B24FCA7D29B7189E0072B7DF /* GCBatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1329B7189D0072B7DF /* GCBatteryState.swift */; };
+		B24FCA7E29B7189E0072B7DF /* GCDeviceModelIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1429B7189D0072B7DF /* GCDeviceModelIdentifier.swift */; };
+		B24FCA7F29B7189E0072B7DF /* GCVolumeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1529B7189D0072B7DF /* GCVolumeInfo.swift */; };
+		B24FCA8029B7189E0072B7DF /* GCDeviceModelIdentifier+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1629B7189D0072B7DF /* GCDeviceModelIdentifier+Extension.swift */; };
+		B24FCA8129B7189E0072B7DF /* GCDeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1729B7189D0072B7DF /* GCDeviceModel.swift */; };
+		B24FCA8229B7189E0072B7DF /* GCProcessInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1829B7189D0072B7DF /* GCProcessInfoProtocol.swift */; };
+		B24FCA8329B7189E0072B7DF /* GCBundleInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1929B7189D0072B7DF /* GCBundleInfoProtocol.swift */; };
+		B24FCA8429B7189E0072B7DF /* GCCellularInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1A29B7189D0072B7DF /* GCCellularInfoProtocol.swift */; };
+		B24FCA8529B7189E0072B7DF /* GCLocalizationInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1B29B7189D0072B7DF /* GCLocalizationInfoProtocol.swift */; };
+		B24FCA8629B7189E0072B7DF /* GCVirtualMemoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1C29B7189D0072B7DF /* GCVirtualMemoryProtocol.swift */; };
+		B24FCA8729B7189E0072B7DF /* GCDiskInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1D29B7189D0072B7DF /* GCDiskInfoProtocol.swift */; };
+		B24FCA8829B7189E0072B7DF /* GCStorageInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1E29B7189D0072B7DF /* GCStorageInfoProtocol.swift */; };
+		B24FCA8929B7189E0072B7DF /* GCOSVersionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA1F29B7189D0072B7DF /* GCOSVersionProtocol.swift */; };
+		B24FCA8A29B7189E0072B7DF /* GCFileInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2029B7189D0072B7DF /* GCFileInfoProtocol.swift */; };
+		B24FCA8B29B7189E0072B7DF /* GCDeviceModelInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2129B7189D0072B7DF /* GCDeviceModelInfoProtocol.swift */; };
+		B24FCA8C29B7189E0072B7DF /* GCDeviceInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2229B7189D0072B7DF /* GCDeviceInfoProtocol.swift */; };
+		B24FCA8D29B7189E0072B7DF /* GCDisplayInfoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2329B7189D0072B7DF /* GCDisplayInfoProtocol.swift */; };
+		B24FCA8E29B7189E0072B7DF /* GCProcessInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2629B7189D0072B7DF /* GCProcessInfo.swift */; };
+		B24FCA8F29B7189E0072B7DF /* GCStorageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2829B7189D0072B7DF /* GCStorageInfo.swift */; };
+		B24FCA9029B7189E0072B7DF /* GCVirtualMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2929B7189D0072B7DF /* GCVirtualMemory.swift */; };
+		B24FCA9129B7189E0072B7DF /* GCDisplayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2B29B7189D0072B7DF /* GCDisplayInfo.swift */; };
+		B24FCA9229B7189E0072B7DF /* GCDiskInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2D29B7189D0072B7DF /* GCDiskInfo.swift */; };
+		B24FCA9329B7189E0072B7DF /* GCBundleInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA2F29B7189D0072B7DF /* GCBundleInfo.swift */; };
+		B24FCA9429B7189E0072B7DF /* UIDevice+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3229B7189D0072B7DF /* UIDevice+extension.swift */; };
+		B24FCA9529B7189E0072B7DF /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3329B7189D0072B7DF /* Optional+Extension.swift */; };
+		B24FCA9629B7189E0072B7DF /* String+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3429B7189D0072B7DF /* String+Router.swift */; };
+		B24FCA9729B7189E0072B7DF /* ByteCountFormatter+FormatBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3529B7189D0072B7DF /* ByteCountFormatter+FormatBytes.swift */; };
+		B24FCA9829B7189E0072B7DF /* Data+Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3629B7189D0072B7DF /* Data+Crypto.swift */; };
+		B24FCA9929B7189E0072B7DF /* GCLocalizationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3829B7189E0072B7DF /* GCLocalizationInfo.swift */; };
+		B24FCA9A29B7189E0072B7DF /* GCDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3A29B7189E0072B7DF /* GCDeviceInfo.swift */; };
+		B24FCA9B29B7189E0072B7DF /* GCDeviceInfoBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3B29B7189E0072B7DF /* GCDeviceInfoBuilder.swift */; };
+		B24FCA9C29B7189E0072B7DF /* GCDeviceModelInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3D29B7189E0072B7DF /* GCDeviceModelInfo.swift */; };
+		B24FCA9D29B7189E0072B7DF /* GCOSVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA3E29B7189E0072B7DF /* GCOSVersion.swift */; };
+		B24FCA9E29B7189E0072B7DF /* GCBatteryInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4029B7189E0072B7DF /* GCBatteryInfo.swift */; };
+		B24FCA9F29B7189E0072B7DF /* GCFileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4229B7189E0072B7DF /* GCFileInfo.swift */; };
+		B24FCAA029B7189E0072B7DF /* GCCellularInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4429B7189E0072B7DF /* GCCellularInfo.swift */; };
+		B24FCAA129B7189E0072B7DF /* GCRouterUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4629B7189E0072B7DF /* GCRouterUtilities.swift */; };
+		B24FCAA229B7189E0072B7DF /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4729B7189E0072B7DF /* String+extension.swift */; };
+		B24FCAA329B7189E0072B7DF /* GCRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4829B7189E0072B7DF /* GCRouterProtocol.swift */; };
+		B24FCAA429B7189E0072B7DF /* GCRouterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4929B7189E0072B7DF /* GCRouterItem.swift */; };
+		B24FCAA529B7189E0072B7DF /* GCRouterSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4A29B7189E0072B7DF /* GCRouterSetting.swift */; };
+		B24FCAA629B7189E0072B7DF /* GCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA4C29B7189E0072B7DF /* GCRouter.swift */; };
+		B24FCAA829B7189E0072B7DF /* GCMasterModule+SetupModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5129B7189E0072B7DF /* GCMasterModule+SetupModule.swift */; };
+		B24FCAA929B7189E0072B7DF /* GCMasterModule+LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5229B7189E0072B7DF /* GCMasterModule+LocationService.swift */; };
+		B24FCAAA29B7189E0072B7DF /* GCMasterModule+GCDeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5329B7189E0072B7DF /* GCMasterModule+GCDeviceInfo.swift */; };
+		B24FCAAB29B7189E0072B7DF /* GCMasterModule+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5429B7189E0072B7DF /* GCMasterModule+Network.swift */; };
+		B24FCAAC29B7189E0072B7DF /* GCMasterModule+Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5529B7189E0072B7DF /* GCMasterModule+Dependency.swift */; };
+		B24FCAAD29B7189E0072B7DF /* GCMasterModule+LocalCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5629B7189E0072B7DF /* GCMasterModule+LocalCache.swift */; };
+		B24FCAAE29B7189E0072B7DF /* GCMasterModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5729B7189E0072B7DF /* GCMasterModule.swift */; };
+		B24FCAAF29B7189E0072B7DF /* GCMasterModule+Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5829B7189E0072B7DF /* GCMasterModule+Database.swift */; };
+		B24FCAB029B7189E0072B7DF /* GCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5D29B7189E0072B7DF /* GCNetworking.swift */; };
+		B24FCAB129B7189E0072B7DF /* GCNetworkingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA5F29B7189E0072B7DF /* GCNetworkingProtocol.swift */; };
+		B24FCAB229B7189E0072B7DF /* GCNetworkingBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA6129B7189E0072B7DF /* GCNetworkingBuilder.swift */; };
+		B24FCAB329B7189E0072B7DF /* GCLocalCacheBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA6429B7189E0072B7DF /* GCLocalCacheBuilder.swift */; };
+		B24FCAB429B7189E0072B7DF /* GCLocalCachedProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA6629B7189E0072B7DF /* GCLocalCachedProtocol.swift */; };
+		B24FCAB529B7189E0072B7DF /* GCLocalCached.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA6829B7189E0072B7DF /* GCLocalCached.swift */; };
+		B24FCAB629B7189E0072B7DF /* LocationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA6C29B7189E0072B7DF /* LocationServices.swift */; };
+		B24FCAB729B7189E0072B7DF /* LocationServiceModuleRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA6D29B7189E0072B7DF /* LocationServiceModuleRegister.swift */; };
+		B24FCAB829B7189E0072B7DF /* LocationServicesRouterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA6E29B7189E0072B7DF /* LocationServicesRouterHandler.swift */; };
+		B24FCAB929B7189E0072B7DF /* GeoComplySDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24FCA7129B7189E0072B7DF /* GeoComplySDK.swift */; };
 		B25B1A2C29AF18E00005685F /* CustomRouterHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B1A2B29AF18E00005685F /* CustomRouterHandler.swift */; };
 		B25B1A2E29AF1A790005685F /* GCMasterModule+LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B1A2D29AF1A790005685F /* GCMasterModule+LocationService.swift */; };
 		B25B1A3029AF1D1E0005685F /* GCDeviceInfo+Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25B1A2F29AF1D1E0005685F /* GCDeviceInfo+Router.swift */; };
@@ -137,34 +207,6 @@
 			remoteGlobalIDString = B247EC7329AAFB3800716AEE;
 			remoteInfo = SampleDI;
 		};
-		B247ED5729AD047D00716AEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B247ED5229AD047C00716AEE;
-			remoteInfo = GCDeviceInfo;
-		};
-		B247EDCB29AD04BD00716AEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B247EDC629AD04BD00716AEE;
-			remoteInfo = LocationFrameWork;
-		};
-		B247EDE329AD052E00716AEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B247EDDE29AD052E00716AEE;
-			remoteInfo = GCMasterModule;
-		};
-		B247EE0C29AD1B2300716AEE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B247EE0729AD1B2200716AEE;
-			remoteInfo = GCRouter;
-		};
 		B247EEC729AEFD3500716AEE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
@@ -200,40 +242,12 @@
 			remoteGlobalIDString = B247EDDE29AD052E00716AEE;
 			remoteInfo = GCMasterModule;
 		};
-		B267FF4C29B30098001942FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B267FF4729B30098001942FF;
-			remoteInfo = GCClient;
-		};
 		B267FF5529B300D4001942FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B247EDDE29AD052E00716AEE;
 			remoteInfo = GCMasterModule;
-		};
-		B267FF6029B30200001942FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B267FF5B29B301FF001942FF;
-			remoteInfo = GCNetworking;
-		};
-		B267FF7829B30345001942FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B267FF7329B30344001942FF;
-			remoteInfo = GCLocalCached;
-		};
-		B267FF8F29B30561001942FF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B247EC6C29AAFB3800716AEE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B267FF8A29B30561001942FF;
-			remoteInfo = GCDataBase;
 		};
 		B267FF9F29B305F6001942FF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -318,7 +332,7 @@
 		B247ED6929AD04A900716AEE /* GCBundleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCBundleInfo.swift; sourceTree = "<group>"; };
 		B247ED6C29AD04A900716AEE /* UIDevice+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
 		B247ED6D29AD04A900716AEE /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
-		B247ED6E29AD04A900716AEE /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		B247ED6E29AD04A900716AEE /* String+Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Router.swift"; sourceTree = "<group>"; };
 		B247ED6F29AD04A900716AEE /* ByteCountFormatter+FormatBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ByteCountFormatter+FormatBytes.swift"; sourceTree = "<group>"; };
 		B247ED7029AD04A900716AEE /* Data+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
 		B247ED7229AD04A900716AEE /* GCLocalizationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCLocalizationInfo.swift; sourceTree = "<group>"; };
@@ -375,6 +389,84 @@
 		B247EEE229AF171C00716AEE /* ViewController+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+Router.swift"; sourceTree = "<group>"; };
 		B24FC90729B5940A0072B7DF /* GCMasterModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCMasterModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B24FC90929B5940A0072B7DF /* GCMasterModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCMasterModuleTests.swift; sourceTree = "<group>"; };
+		B24FCA0129B7189D0072B7DF /* GCDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDataBase.h; sourceTree = "<group>"; };
+		B24FCA0329B7189D0072B7DF /* GCDataBaseBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDataBaseBuilder.swift; sourceTree = "<group>"; };
+		B24FCA0529B7189D0072B7DF /* GCDataBaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDataBaseProtocol.swift; sourceTree = "<group>"; };
+		B24FCA0729B7189D0072B7DF /* GCDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDataBase.swift; sourceTree = "<group>"; };
+		B24FCA0929B7189D0072B7DF /* GCDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDeviceInfo.h; sourceTree = "<group>"; };
+		B24FCA0A29B7189D0072B7DF /* GCDeviceInfo+Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCDeviceInfo+Router.swift"; sourceTree = "<group>"; };
+		B24FCA0C29B7189D0072B7DF /* GCBatteryInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCBatteryInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA0E29B7189D0072B7DF /* GCAppDirectories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCAppDirectories.swift; sourceTree = "<group>"; };
+		B24FCA0F29B7189D0072B7DF /* GCAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCAppearance.swift; sourceTree = "<group>"; };
+		B24FCA1029B7189D0072B7DF /* GCByteCountUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCByteCountUnit.swift; sourceTree = "<group>"; };
+		B24FCA1129B7189D0072B7DF /* ReceiptType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptType.swift; sourceTree = "<group>"; };
+		B24FCA1229B7189D0072B7DF /* GCCarrierInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCCarrierInfo.swift; sourceTree = "<group>"; };
+		B24FCA1329B7189D0072B7DF /* GCBatteryState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCBatteryState.swift; sourceTree = "<group>"; };
+		B24FCA1429B7189D0072B7DF /* GCDeviceModelIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDeviceModelIdentifier.swift; sourceTree = "<group>"; };
+		B24FCA1529B7189D0072B7DF /* GCVolumeInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCVolumeInfo.swift; sourceTree = "<group>"; };
+		B24FCA1629B7189D0072B7DF /* GCDeviceModelIdentifier+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCDeviceModelIdentifier+Extension.swift"; sourceTree = "<group>"; };
+		B24FCA1729B7189D0072B7DF /* GCDeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDeviceModel.swift; sourceTree = "<group>"; };
+		B24FCA1829B7189D0072B7DF /* GCProcessInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCProcessInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA1929B7189D0072B7DF /* GCBundleInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCBundleInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA1A29B7189D0072B7DF /* GCCellularInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCCellularInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA1B29B7189D0072B7DF /* GCLocalizationInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCLocalizationInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA1C29B7189D0072B7DF /* GCVirtualMemoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCVirtualMemoryProtocol.swift; sourceTree = "<group>"; };
+		B24FCA1D29B7189D0072B7DF /* GCDiskInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDiskInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA1E29B7189D0072B7DF /* GCStorageInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCStorageInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA1F29B7189D0072B7DF /* GCOSVersionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCOSVersionProtocol.swift; sourceTree = "<group>"; };
+		B24FCA2029B7189D0072B7DF /* GCFileInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCFileInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA2129B7189D0072B7DF /* GCDeviceModelInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDeviceModelInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA2229B7189D0072B7DF /* GCDeviceInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDeviceInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA2329B7189D0072B7DF /* GCDisplayInfoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDisplayInfoProtocol.swift; sourceTree = "<group>"; };
+		B24FCA2629B7189D0072B7DF /* GCProcessInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCProcessInfo.swift; sourceTree = "<group>"; };
+		B24FCA2829B7189D0072B7DF /* GCStorageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCStorageInfo.swift; sourceTree = "<group>"; };
+		B24FCA2929B7189D0072B7DF /* GCVirtualMemory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCVirtualMemory.swift; sourceTree = "<group>"; };
+		B24FCA2B29B7189D0072B7DF /* GCDisplayInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDisplayInfo.swift; sourceTree = "<group>"; };
+		B24FCA2D29B7189D0072B7DF /* GCDiskInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDiskInfo.swift; sourceTree = "<group>"; };
+		B24FCA2F29B7189D0072B7DF /* GCBundleInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCBundleInfo.swift; sourceTree = "<group>"; };
+		B24FCA3229B7189D0072B7DF /* UIDevice+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIDevice+extension.swift"; sourceTree = "<group>"; };
+		B24FCA3329B7189D0072B7DF /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		B24FCA3429B7189D0072B7DF /* String+Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Router.swift"; sourceTree = "<group>"; };
+		B24FCA3529B7189D0072B7DF /* ByteCountFormatter+FormatBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ByteCountFormatter+FormatBytes.swift"; sourceTree = "<group>"; };
+		B24FCA3629B7189D0072B7DF /* Data+Crypto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Crypto.swift"; sourceTree = "<group>"; };
+		B24FCA3829B7189E0072B7DF /* GCLocalizationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCLocalizationInfo.swift; sourceTree = "<group>"; };
+		B24FCA3A29B7189E0072B7DF /* GCDeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDeviceInfo.swift; sourceTree = "<group>"; };
+		B24FCA3B29B7189E0072B7DF /* GCDeviceInfoBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDeviceInfoBuilder.swift; sourceTree = "<group>"; };
+		B24FCA3D29B7189E0072B7DF /* GCDeviceModelInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDeviceModelInfo.swift; sourceTree = "<group>"; };
+		B24FCA3E29B7189E0072B7DF /* GCOSVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCOSVersion.swift; sourceTree = "<group>"; };
+		B24FCA4029B7189E0072B7DF /* GCBatteryInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCBatteryInfo.swift; sourceTree = "<group>"; };
+		B24FCA4229B7189E0072B7DF /* GCFileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCFileInfo.swift; sourceTree = "<group>"; };
+		B24FCA4429B7189E0072B7DF /* GCCellularInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCCellularInfo.swift; sourceTree = "<group>"; };
+		B24FCA4629B7189E0072B7DF /* GCRouterUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCRouterUtilities.swift; sourceTree = "<group>"; };
+		B24FCA4729B7189E0072B7DF /* String+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		B24FCA4829B7189E0072B7DF /* GCRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCRouterProtocol.swift; sourceTree = "<group>"; };
+		B24FCA4929B7189E0072B7DF /* GCRouterItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCRouterItem.swift; sourceTree = "<group>"; };
+		B24FCA4A29B7189E0072B7DF /* GCRouterSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCRouterSetting.swift; sourceTree = "<group>"; };
+		B24FCA4B29B7189E0072B7DF /* GCRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCRouter.h; sourceTree = "<group>"; };
+		B24FCA4C29B7189E0072B7DF /* GCRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCRouter.swift; sourceTree = "<group>"; };
+		B24FCA5129B7189E0072B7DF /* GCMasterModule+SetupModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+SetupModule.swift"; sourceTree = "<group>"; };
+		B24FCA5229B7189E0072B7DF /* GCMasterModule+LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+LocationService.swift"; sourceTree = "<group>"; };
+		B24FCA5329B7189E0072B7DF /* GCMasterModule+GCDeviceInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+GCDeviceInfo.swift"; sourceTree = "<group>"; };
+		B24FCA5429B7189E0072B7DF /* GCMasterModule+Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+Network.swift"; sourceTree = "<group>"; };
+		B24FCA5529B7189E0072B7DF /* GCMasterModule+Dependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+Dependency.swift"; sourceTree = "<group>"; };
+		B24FCA5629B7189E0072B7DF /* GCMasterModule+LocalCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+LocalCache.swift"; sourceTree = "<group>"; };
+		B24FCA5729B7189E0072B7DF /* GCMasterModule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCMasterModule.swift; sourceTree = "<group>"; };
+		B24FCA5829B7189E0072B7DF /* GCMasterModule+Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+Database.swift"; sourceTree = "<group>"; };
+		B24FCA5929B7189E0072B7DF /* GCMasterModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMasterModule.h; sourceTree = "<group>"; };
+		B24FCA5C29B7189E0072B7DF /* GCNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCNetworking.h; sourceTree = "<group>"; };
+		B24FCA5D29B7189E0072B7DF /* GCNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCNetworking.swift; sourceTree = "<group>"; };
+		B24FCA5F29B7189E0072B7DF /* GCNetworkingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCNetworkingProtocol.swift; sourceTree = "<group>"; };
+		B24FCA6129B7189E0072B7DF /* GCNetworkingBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCNetworkingBuilder.swift; sourceTree = "<group>"; };
+		B24FCA6429B7189E0072B7DF /* GCLocalCacheBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCLocalCacheBuilder.swift; sourceTree = "<group>"; };
+		B24FCA6629B7189E0072B7DF /* GCLocalCachedProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCLocalCachedProtocol.swift; sourceTree = "<group>"; };
+		B24FCA6829B7189E0072B7DF /* GCLocalCached.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCLocalCached.swift; sourceTree = "<group>"; };
+		B24FCA6929B7189E0072B7DF /* GCLocalCached.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCLocalCached.h; sourceTree = "<group>"; };
+		B24FCA6B29B7189E0072B7DF /* LocationFrameWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationFrameWork.h; sourceTree = "<group>"; };
+		B24FCA6C29B7189E0072B7DF /* LocationServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServices.swift; sourceTree = "<group>"; };
+		B24FCA6D29B7189E0072B7DF /* LocationServiceModuleRegister.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceModuleRegister.swift; sourceTree = "<group>"; };
+		B24FCA6E29B7189E0072B7DF /* LocationServicesRouterHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServicesRouterHandler.swift; sourceTree = "<group>"; };
+		B24FCA7129B7189E0072B7DF /* GeoComplySDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeoComplySDK.swift; sourceTree = "<group>"; };
+		B24FCA7229B7189E0072B7DF /* GCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCClient.h; sourceTree = "<group>"; };
 		B25B1A2B29AF18E00005685F /* CustomRouterHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRouterHandler.swift; sourceTree = "<group>"; };
 		B25B1A2D29AF1A790005685F /* GCMasterModule+LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCMasterModule+LocationService.swift"; sourceTree = "<group>"; };
 		B25B1A2F29AF1D1E0005685F /* GCDeviceInfo+Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCDeviceInfo+Router.swift"; sourceTree = "<group>"; };
@@ -536,6 +628,7 @@
 		B247EC7629AAFB3800716AEE /* SampleDI */ = {
 			isa = PBXGroup;
 			children = (
+				B24FC9FD29B7188B0072B7DF /* LanhCung */,
 				B247EEDD29AF11B300716AEE /* Utilities */,
 				B247ECB929ACC23500716AEE /* SampleModel */,
 				B247EC7729AAFB3800716AEE /* AppDelegate.swift */,
@@ -661,7 +754,7 @@
 			children = (
 				B247ED6C29AD04A900716AEE /* UIDevice+extension.swift */,
 				B247ED6D29AD04A900716AEE /* Optional+Extension.swift */,
-				B247ED6E29AD04A900716AEE /* String+extension.swift */,
+				B247ED6E29AD04A900716AEE /* String+Router.swift */,
 				B247ED6F29AD04A900716AEE /* ByteCountFormatter+FormatBytes.swift */,
 				B247ED7029AD04A900716AEE /* Data+Crypto.swift */,
 			);
@@ -819,6 +912,387 @@
 				B24FC90929B5940A0072B7DF /* GCMasterModuleTests.swift */,
 			);
 			path = GCMasterModuleTests;
+			sourceTree = "<group>";
+		};
+		B24FC9FD29B7188B0072B7DF /* LanhCung */ = {
+			isa = PBXGroup;
+			children = (
+				B24FC9FE29B7189D0072B7DF /* Modules */,
+			);
+			path = LanhCung;
+			sourceTree = "<group>";
+		};
+		B24FC9FE29B7189D0072B7DF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B24FC9FF29B7189D0072B7DF /* CoreModules */,
+				B24FCA5A29B7189E0072B7DF /* Middle */,
+				B24FCA6F29B7189E0072B7DF /* ProductModules */,
+			);
+			path = Modules;
+			sourceTree = SOURCE_ROOT;
+		};
+		B24FC9FF29B7189D0072B7DF /* CoreModules */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0029B7189D0072B7DF /* GCDataBase */,
+				B24FCA0829B7189D0072B7DF /* GCDeviceInfo */,
+				B24FCA4529B7189E0072B7DF /* GCRouter */,
+				B24FCA4D29B7189E0072B7DF /* GCMasterModule */,
+			);
+			path = CoreModules;
+			sourceTree = "<group>";
+		};
+		B24FCA0029B7189D0072B7DF /* GCDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0129B7189D0072B7DF /* GCDataBase.h */,
+				B24FCA0229B7189D0072B7DF /* Builder */,
+				B24FCA0429B7189D0072B7DF /* Domain */,
+				B24FCA0629B7189D0072B7DF /* Presentation */,
+			);
+			path = GCDataBase;
+			sourceTree = "<group>";
+		};
+		B24FCA0229B7189D0072B7DF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0329B7189D0072B7DF /* GCDataBaseBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B24FCA0429B7189D0072B7DF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0529B7189D0072B7DF /* GCDataBaseProtocol.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B24FCA0629B7189D0072B7DF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0729B7189D0072B7DF /* GCDataBase.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B24FCA0829B7189D0072B7DF /* GCDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0929B7189D0072B7DF /* GCDeviceInfo.h */,
+				B24FCA0A29B7189D0072B7DF /* GCDeviceInfo+Router.swift */,
+				B24FCA0B29B7189D0072B7DF /* Domain */,
+				B24FCA2429B7189D0072B7DF /* Presentation */,
+			);
+			path = GCDeviceInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA0B29B7189D0072B7DF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0C29B7189D0072B7DF /* GCBatteryInfoProtocol.swift */,
+				B24FCA0D29B7189D0072B7DF /* Entity */,
+				B24FCA1829B7189D0072B7DF /* GCProcessInfoProtocol.swift */,
+				B24FCA1929B7189D0072B7DF /* GCBundleInfoProtocol.swift */,
+				B24FCA1A29B7189D0072B7DF /* GCCellularInfoProtocol.swift */,
+				B24FCA1B29B7189D0072B7DF /* GCLocalizationInfoProtocol.swift */,
+				B24FCA1C29B7189D0072B7DF /* GCVirtualMemoryProtocol.swift */,
+				B24FCA1D29B7189D0072B7DF /* GCDiskInfoProtocol.swift */,
+				B24FCA1E29B7189D0072B7DF /* GCStorageInfoProtocol.swift */,
+				B24FCA1F29B7189D0072B7DF /* GCOSVersionProtocol.swift */,
+				B24FCA2029B7189D0072B7DF /* GCFileInfoProtocol.swift */,
+				B24FCA2129B7189D0072B7DF /* GCDeviceModelInfoProtocol.swift */,
+				B24FCA2229B7189D0072B7DF /* GCDeviceInfoProtocol.swift */,
+				B24FCA2329B7189D0072B7DF /* GCDisplayInfoProtocol.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B24FCA0D29B7189D0072B7DF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA0E29B7189D0072B7DF /* GCAppDirectories.swift */,
+				B24FCA0F29B7189D0072B7DF /* GCAppearance.swift */,
+				B24FCA1029B7189D0072B7DF /* GCByteCountUnit.swift */,
+				B24FCA1129B7189D0072B7DF /* ReceiptType.swift */,
+				B24FCA1229B7189D0072B7DF /* GCCarrierInfo.swift */,
+				B24FCA1329B7189D0072B7DF /* GCBatteryState.swift */,
+				B24FCA1429B7189D0072B7DF /* GCDeviceModelIdentifier.swift */,
+				B24FCA1529B7189D0072B7DF /* GCVolumeInfo.swift */,
+				B24FCA1629B7189D0072B7DF /* GCDeviceModelIdentifier+Extension.swift */,
+				B24FCA1729B7189D0072B7DF /* GCDeviceModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		B24FCA2429B7189D0072B7DF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA2529B7189D0072B7DF /* GCProcessInfo */,
+				B24FCA2729B7189D0072B7DF /* GCStorageInfo */,
+				B24FCA2A29B7189D0072B7DF /* GCDisplayInfo */,
+				B24FCA2C29B7189D0072B7DF /* GCDiskInfo */,
+				B24FCA2E29B7189D0072B7DF /* GCBundleInfo */,
+				B24FCA3029B7189D0072B7DF /* Utilities */,
+				B24FCA3729B7189D0072B7DF /* GCLocalizationInfo */,
+				B24FCA3929B7189E0072B7DF /* GCDeviceInfo */,
+				B24FCA3C29B7189E0072B7DF /* GCDeviceModelInfo */,
+				B24FCA3F29B7189E0072B7DF /* GCBatteryInfo */,
+				B24FCA4129B7189E0072B7DF /* GCFileInfo */,
+				B24FCA4329B7189E0072B7DF /* GCCellularInfo */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B24FCA2529B7189D0072B7DF /* GCProcessInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA2629B7189D0072B7DF /* GCProcessInfo.swift */,
+			);
+			path = GCProcessInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA2729B7189D0072B7DF /* GCStorageInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA2829B7189D0072B7DF /* GCStorageInfo.swift */,
+				B24FCA2929B7189D0072B7DF /* GCVirtualMemory.swift */,
+			);
+			path = GCStorageInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA2A29B7189D0072B7DF /* GCDisplayInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA2B29B7189D0072B7DF /* GCDisplayInfo.swift */,
+			);
+			path = GCDisplayInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA2C29B7189D0072B7DF /* GCDiskInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA2D29B7189D0072B7DF /* GCDiskInfo.swift */,
+			);
+			path = GCDiskInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA2E29B7189D0072B7DF /* GCBundleInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA2F29B7189D0072B7DF /* GCBundleInfo.swift */,
+			);
+			path = GCBundleInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA3029B7189D0072B7DF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA3129B7189D0072B7DF /* Extension */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B24FCA3129B7189D0072B7DF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA3229B7189D0072B7DF /* UIDevice+extension.swift */,
+				B24FCA3329B7189D0072B7DF /* Optional+Extension.swift */,
+				B24FCA3429B7189D0072B7DF /* String+Router.swift */,
+				B24FCA3529B7189D0072B7DF /* ByteCountFormatter+FormatBytes.swift */,
+				B24FCA3629B7189D0072B7DF /* Data+Crypto.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		B24FCA3729B7189D0072B7DF /* GCLocalizationInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA3829B7189E0072B7DF /* GCLocalizationInfo.swift */,
+			);
+			path = GCLocalizationInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA3929B7189E0072B7DF /* GCDeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA3A29B7189E0072B7DF /* GCDeviceInfo.swift */,
+				B24FCA3B29B7189E0072B7DF /* GCDeviceInfoBuilder.swift */,
+			);
+			path = GCDeviceInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA3C29B7189E0072B7DF /* GCDeviceModelInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA3D29B7189E0072B7DF /* GCDeviceModelInfo.swift */,
+				B24FCA3E29B7189E0072B7DF /* GCOSVersion.swift */,
+			);
+			path = GCDeviceModelInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA3F29B7189E0072B7DF /* GCBatteryInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA4029B7189E0072B7DF /* GCBatteryInfo.swift */,
+			);
+			path = GCBatteryInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA4129B7189E0072B7DF /* GCFileInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA4229B7189E0072B7DF /* GCFileInfo.swift */,
+			);
+			path = GCFileInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA4329B7189E0072B7DF /* GCCellularInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA4429B7189E0072B7DF /* GCCellularInfo.swift */,
+			);
+			path = GCCellularInfo;
+			sourceTree = "<group>";
+		};
+		B24FCA4529B7189E0072B7DF /* GCRouter */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA4629B7189E0072B7DF /* GCRouterUtilities.swift */,
+				B24FCA4729B7189E0072B7DF /* String+extension.swift */,
+				B24FCA4829B7189E0072B7DF /* GCRouterProtocol.swift */,
+				B24FCA4929B7189E0072B7DF /* GCRouterItem.swift */,
+				B24FCA4A29B7189E0072B7DF /* GCRouterSetting.swift */,
+				B24FCA4B29B7189E0072B7DF /* GCRouter.h */,
+				B24FCA4C29B7189E0072B7DF /* GCRouter.swift */,
+			);
+			path = GCRouter;
+			sourceTree = "<group>";
+		};
+		B24FCA4D29B7189E0072B7DF /* GCMasterModule */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA5029B7189E0072B7DF /* SetupModules */,
+				B24FCA5229B7189E0072B7DF /* GCMasterModule+LocationService.swift */,
+				B24FCA5329B7189E0072B7DF /* GCMasterModule+GCDeviceInfo.swift */,
+				B24FCA5429B7189E0072B7DF /* GCMasterModule+Network.swift */,
+				B24FCA5529B7189E0072B7DF /* GCMasterModule+Dependency.swift */,
+				B24FCA5629B7189E0072B7DF /* GCMasterModule+LocalCache.swift */,
+				B24FCA5729B7189E0072B7DF /* GCMasterModule.swift */,
+				B24FCA5829B7189E0072B7DF /* GCMasterModule+Database.swift */,
+				B24FCA5929B7189E0072B7DF /* GCMasterModule.h */,
+			);
+			path = GCMasterModule;
+			sourceTree = "<group>";
+		};
+		B24FCA5029B7189E0072B7DF /* SetupModules */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA5129B7189E0072B7DF /* GCMasterModule+SetupModule.swift */,
+			);
+			path = SetupModules;
+			sourceTree = "<group>";
+		};
+		B24FCA5A29B7189E0072B7DF /* Middle */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA5B29B7189E0072B7DF /* GCNetworking */,
+				B24FCA6229B7189E0072B7DF /* GCLocalCached */,
+				B24FCA6A29B7189E0072B7DF /* LocationFrameWork */,
+			);
+			path = Middle;
+			sourceTree = "<group>";
+		};
+		B24FCA5B29B7189E0072B7DF /* GCNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA5C29B7189E0072B7DF /* GCNetworking.h */,
+				B24FCA5D29B7189E0072B7DF /* GCNetworking.swift */,
+				B24FCA5E29B7189E0072B7DF /* Domain */,
+			);
+			path = GCNetworking;
+			sourceTree = "<group>";
+		};
+		B24FCA5E29B7189E0072B7DF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA5F29B7189E0072B7DF /* GCNetworkingProtocol.swift */,
+				B24FCA6029B7189E0072B7DF /* Builder */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B24FCA6029B7189E0072B7DF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA6129B7189E0072B7DF /* GCNetworkingBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B24FCA6229B7189E0072B7DF /* GCLocalCached */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA6329B7189E0072B7DF /* Builder */,
+				B24FCA6529B7189E0072B7DF /* Domain */,
+				B24FCA6729B7189E0072B7DF /* Presentation */,
+				B24FCA6929B7189E0072B7DF /* GCLocalCached.h */,
+			);
+			path = GCLocalCached;
+			sourceTree = "<group>";
+		};
+		B24FCA6329B7189E0072B7DF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA6429B7189E0072B7DF /* GCLocalCacheBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		B24FCA6529B7189E0072B7DF /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA6629B7189E0072B7DF /* GCLocalCachedProtocol.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B24FCA6729B7189E0072B7DF /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA6829B7189E0072B7DF /* GCLocalCached.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B24FCA6A29B7189E0072B7DF /* LocationFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA6B29B7189E0072B7DF /* LocationFrameWork.h */,
+				B24FCA6C29B7189E0072B7DF /* LocationServices.swift */,
+				B24FCA6D29B7189E0072B7DF /* LocationServiceModuleRegister.swift */,
+				B24FCA6E29B7189E0072B7DF /* LocationServicesRouterHandler.swift */,
+			);
+			path = LocationFrameWork;
+			sourceTree = "<group>";
+		};
+		B24FCA6F29B7189E0072B7DF /* ProductModules */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA7029B7189E0072B7DF /* GCClient */,
+			);
+			path = ProductModules;
+			sourceTree = "<group>";
+		};
+		B24FCA7029B7189E0072B7DF /* GCClient */ = {
+			isa = PBXGroup;
+			children = (
+				B24FCA7129B7189E0072B7DF /* GeoComplySDK.swift */,
+				B24FCA7229B7189E0072B7DF /* GCClient.h */,
+			);
+			path = GCClient;
 			sourceTree = "<group>";
 		};
 		B267FF3F29B2FFC2001942FF /* Modules */ = {
@@ -1056,14 +1530,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				B247ED5829AD047D00716AEE /* PBXTargetDependency */,
-				B247EDCC29AD04BD00716AEE /* PBXTargetDependency */,
-				B247EDE429AD052E00716AEE /* PBXTargetDependency */,
-				B247EE0D29AD1B2300716AEE /* PBXTargetDependency */,
-				B267FF4D29B30098001942FF /* PBXTargetDependency */,
-				B267FF6129B30200001942FF /* PBXTargetDependency */,
-				B267FF7929B30345001942FF /* PBXTargetDependency */,
-				B267FF9029B30561001942FF /* PBXTargetDependency */,
 			);
 			name = SampleDI;
 			productName = SampleDI;
@@ -1455,14 +1921,84 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B24FCA7F29B7189E0072B7DF /* GCVolumeInfo.swift in Sources */,
+				B24FCA9C29B7189E0072B7DF /* GCDeviceModelInfo.swift in Sources */,
+				B24FCA9529B7189E0072B7DF /* Optional+Extension.swift in Sources */,
+				B24FCAAF29B7189E0072B7DF /* GCMasterModule+Database.swift in Sources */,
+				B24FCA9429B7189E0072B7DF /* UIDevice+extension.swift in Sources */,
+				B24FCA9929B7189E0072B7DF /* GCLocalizationInfo.swift in Sources */,
 				B247EEDF29AF135500716AEE /* UIViewController+Alert.swift in Sources */,
+				B24FCA9329B7189E0072B7DF /* GCBundleInfo.swift in Sources */,
+				B24FCA8D29B7189E0072B7DF /* GCDisplayInfoProtocol.swift in Sources */,
 				B247EC7C29AAFB3800716AEE /* ViewController.swift in Sources */,
+				B24FCAB329B7189E0072B7DF /* GCLocalCacheBuilder.swift in Sources */,
+				B24FCAB729B7189E0072B7DF /* LocationServiceModuleRegister.swift in Sources */,
 				B247EEE129AF16FC00716AEE /* ViewController+MasterModule.swift in Sources */,
+				B24FCA7529B7189E0072B7DF /* GCDataBase.swift in Sources */,
+				B24FCA8229B7189E0072B7DF /* GCProcessInfoProtocol.swift in Sources */,
+				B24FCA9B29B7189E0072B7DF /* GCDeviceInfoBuilder.swift in Sources */,
+				B24FCA8329B7189E0072B7DF /* GCBundleInfoProtocol.swift in Sources */,
+				B24FCA8C29B7189E0072B7DF /* GCDeviceInfoProtocol.swift in Sources */,
+				B24FCA9E29B7189E0072B7DF /* GCBatteryInfo.swift in Sources */,
 				B247EEE329AF171C00716AEE /* ViewController+Router.swift in Sources */,
+				B24FCAAC29B7189E0072B7DF /* GCMasterModule+Dependency.swift in Sources */,
+				B24FCAA429B7189E0072B7DF /* GCRouterItem.swift in Sources */,
+				B24FCA7429B7189E0072B7DF /* GCDataBaseProtocol.swift in Sources */,
+				B24FCA7629B7189E0072B7DF /* GCDeviceInfo+Router.swift in Sources */,
+				B24FCA7A29B7189E0072B7DF /* GCByteCountUnit.swift in Sources */,
+				B24FCA8929B7189E0072B7DF /* GCOSVersionProtocol.swift in Sources */,
+				B24FCA8829B7189E0072B7DF /* GCStorageInfoProtocol.swift in Sources */,
+				B24FCAB429B7189E0072B7DF /* GCLocalCachedProtocol.swift in Sources */,
+				B24FCA7829B7189E0072B7DF /* GCAppDirectories.swift in Sources */,
+				B24FCA8629B7189E0072B7DF /* GCVirtualMemoryProtocol.swift in Sources */,
+				B24FCAA929B7189E0072B7DF /* GCMasterModule+LocationService.swift in Sources */,
+				B24FCAB229B7189E0072B7DF /* GCNetworkingBuilder.swift in Sources */,
 				B247ECBB29ACC24C00716AEE /* SampleModel.swift in Sources */,
+				B24FCAB929B7189E0072B7DF /* GeoComplySDK.swift in Sources */,
+				B24FCAA129B7189E0072B7DF /* GCRouterUtilities.swift in Sources */,
+				B24FCA8B29B7189E0072B7DF /* GCDeviceModelInfoProtocol.swift in Sources */,
 				B247EC7829AAFB3800716AEE /* AppDelegate.swift in Sources */,
+				B24FCAB029B7189E0072B7DF /* GCNetworking.swift in Sources */,
+				B24FCA9229B7189E0072B7DF /* GCDiskInfo.swift in Sources */,
 				B25B1A2C29AF18E00005685F /* CustomRouterHandler.swift in Sources */,
+				B24FCA8729B7189E0072B7DF /* GCDiskInfoProtocol.swift in Sources */,
+				B24FCA9829B7189E0072B7DF /* Data+Crypto.swift in Sources */,
+				B24FCA9029B7189E0072B7DF /* GCVirtualMemory.swift in Sources */,
+				B24FCA9129B7189E0072B7DF /* GCDisplayInfo.swift in Sources */,
+				B24FCAA829B7189E0072B7DF /* GCMasterModule+SetupModule.swift in Sources */,
+				B24FCAB529B7189E0072B7DF /* GCLocalCached.swift in Sources */,
+				B24FCA8529B7189E0072B7DF /* GCLocalizationInfoProtocol.swift in Sources */,
+				B24FCA7C29B7189E0072B7DF /* GCCarrierInfo.swift in Sources */,
+				B24FCA8029B7189E0072B7DF /* GCDeviceModelIdentifier+Extension.swift in Sources */,
+				B24FCA8F29B7189E0072B7DF /* GCStorageInfo.swift in Sources */,
+				B24FCAAB29B7189E0072B7DF /* GCMasterModule+Network.swift in Sources */,
+				B24FCA8429B7189E0072B7DF /* GCCellularInfoProtocol.swift in Sources */,
+				B24FCA9A29B7189E0072B7DF /* GCDeviceInfo.swift in Sources */,
+				B24FCAA229B7189E0072B7DF /* String+extension.swift in Sources */,
+				B24FCA9F29B7189E0072B7DF /* GCFileInfo.swift in Sources */,
+				B24FCA9729B7189E0072B7DF /* ByteCountFormatter+FormatBytes.swift in Sources */,
+				B24FCAA629B7189E0072B7DF /* GCRouter.swift in Sources */,
+				B24FCA9629B7189E0072B7DF /* String+Router.swift in Sources */,
+				B24FCAAE29B7189E0072B7DF /* GCMasterModule.swift in Sources */,
+				B24FCAB129B7189E0072B7DF /* GCNetworkingProtocol.swift in Sources */,
+				B24FCAB829B7189E0072B7DF /* LocationServicesRouterHandler.swift in Sources */,
+				B24FCA8129B7189E0072B7DF /* GCDeviceModel.swift in Sources */,
+				B24FCA7729B7189E0072B7DF /* GCBatteryInfoProtocol.swift in Sources */,
+				B24FCA7E29B7189E0072B7DF /* GCDeviceModelIdentifier.swift in Sources */,
+				B24FCA9D29B7189E0072B7DF /* GCOSVersion.swift in Sources */,
+				B24FCAA529B7189E0072B7DF /* GCRouterSetting.swift in Sources */,
+				B24FCA7D29B7189E0072B7DF /* GCBatteryState.swift in Sources */,
+				B24FCA8A29B7189E0072B7DF /* GCFileInfoProtocol.swift in Sources */,
+				B24FCA8E29B7189E0072B7DF /* GCProcessInfo.swift in Sources */,
+				B24FCAAD29B7189E0072B7DF /* GCMasterModule+LocalCache.swift in Sources */,
+				B24FCAA329B7189E0072B7DF /* GCRouterProtocol.swift in Sources */,
 				B247EC7A29AAFB3800716AEE /* SceneDelegate.swift in Sources */,
+				B24FCAAA29B7189E0072B7DF /* GCMasterModule+GCDeviceInfo.swift in Sources */,
+				B24FCA7329B7189E0072B7DF /* GCDataBaseBuilder.swift in Sources */,
+				B24FCA7B29B7189E0072B7DF /* ReceiptType.swift in Sources */,
+				B24FCA7929B7189E0072B7DF /* GCAppearance.swift in Sources */,
+				B24FCAB629B7189E0072B7DF /* LocationServices.swift in Sources */,
+				B24FCAA029B7189E0072B7DF /* GCCellularInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1528,7 +2064,7 @@
 				B247EDB229AD04A900716AEE /* GCDeviceModelIdentifier.swift in Sources */,
 				B247EDA729AD04A900716AEE /* GCOSVersion.swift in Sources */,
 				B247EDB629AD04A900716AEE /* GCProcessInfoProtocol.swift in Sources */,
-				B247EDA029AD04A900716AEE /* String+extension.swift in Sources */,
+				B247EDA029AD04A900716AEE /* String+Router.swift in Sources */,
 				B247EDB029AD04A900716AEE /* GCCarrierInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1630,26 +2166,6 @@
 			target = B247EC7329AAFB3800716AEE /* SampleDI */;
 			targetProxy = B247EC9529AAFB3A00716AEE /* PBXContainerItemProxy */;
 		};
-		B247ED5829AD047D00716AEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B247ED5229AD047C00716AEE /* GCDeviceInfo */;
-			targetProxy = B247ED5729AD047D00716AEE /* PBXContainerItemProxy */;
-		};
-		B247EDCC29AD04BD00716AEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B247EDC629AD04BD00716AEE /* LocationFrameWork */;
-			targetProxy = B247EDCB29AD04BD00716AEE /* PBXContainerItemProxy */;
-		};
-		B247EDE429AD052E00716AEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B247EDDE29AD052E00716AEE /* GCMasterModule */;
-			targetProxy = B247EDE329AD052E00716AEE /* PBXContainerItemProxy */;
-		};
-		B247EE0D29AD1B2300716AEE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B247EE0729AD1B2200716AEE /* GCRouter */;
-			targetProxy = B247EE0C29AD1B2300716AEE /* PBXContainerItemProxy */;
-		};
 		B247EEC829AEFD3500716AEE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B247EDC629AD04BD00716AEE /* LocationFrameWork */;
@@ -1675,30 +2191,10 @@
 			target = B247EDDE29AD052E00716AEE /* GCMasterModule */;
 			targetProxy = B24FC90C29B5940A0072B7DF /* PBXContainerItemProxy */;
 		};
-		B267FF4D29B30098001942FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B267FF4729B30098001942FF /* GCClient */;
-			targetProxy = B267FF4C29B30098001942FF /* PBXContainerItemProxy */;
-		};
 		B267FF5629B300D4001942FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B247EDDE29AD052E00716AEE /* GCMasterModule */;
 			targetProxy = B267FF5529B300D4001942FF /* PBXContainerItemProxy */;
-		};
-		B267FF6129B30200001942FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B267FF5B29B301FF001942FF /* GCNetworking */;
-			targetProxy = B267FF6029B30200001942FF /* PBXContainerItemProxy */;
-		};
-		B267FF7929B30345001942FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B267FF7329B30344001942FF /* GCLocalCached */;
-			targetProxy = B267FF7829B30345001942FF /* PBXContainerItemProxy */;
-		};
-		B267FF9029B30561001942FF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B267FF8A29B30561001942FF /* GCDataBase */;
-			targetProxy = B267FF8F29B30561001942FF /* PBXContainerItemProxy */;
 		};
 		B267FFA029B305F6001942FF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

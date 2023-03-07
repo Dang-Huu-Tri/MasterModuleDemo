@@ -6,8 +6,12 @@
 //
 
 import Foundation
+#if canImport(GCLocalCached)
 import GCLocalCached
+#endif
+#if canImport(GCDataBase)
 import GCDataBase
+#endif
 
 extension GCMasterModule {
     var localCache: GCLocalCachedProtocol? {
@@ -16,7 +20,7 @@ extension GCMasterModule {
 }
 
 extension GCMasterModule: GCLocalCachedProtocol {
-    public var database: GCDataBase.GCDataBaseProtocol? {
+    public var database: GCDataBaseProtocol? {
         return self.dependencyDatabase
     }
     

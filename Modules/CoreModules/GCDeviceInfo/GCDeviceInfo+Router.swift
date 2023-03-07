@@ -6,8 +6,12 @@
 //
 
 import Foundation
-import GCRouter
 import UIKit
+#if canImport(GCRouter)
+import GCRouter
+#endif
+
+
 
 public class GCDeviceInfoRouterHandler: GCRouterProtocol {
     public static func registerRouterItems() {

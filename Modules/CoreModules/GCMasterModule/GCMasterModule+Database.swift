@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(GCDataBase)
 import GCDataBase
+#endif
 
 extension GCMasterModule {
     var dependencyDatabase: GCDataBaseProtocol? {

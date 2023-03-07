@@ -6,8 +6,12 @@
 //
 
 import Foundation
+#if canImport(GCNetworking)
 import GCNetworking
+#endif
+#if canImport(GCLocalCached)
 import GCLocalCached
+#endif
 
 extension GCMasterModule {
     var network: GCNetworkingProtocol? {
@@ -20,7 +24,7 @@ extension GCMasterModule: GCNetworkingProtocol {
         self.network?.request()
     }
     
-    public var cache: GCLocalCached.GCLocalCachedProtocol? {
+    public var cache: GCLocalCachedProtocol? {
         get {
             return self.network?.cache
         }

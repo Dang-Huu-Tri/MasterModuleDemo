@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(GCLocalCached)
 import GCLocalCached
+#endif
 
 @objcMembers
 public class GCNetworkingBuilder: NSObject {

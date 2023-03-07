@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(LocationFrameWork)
 import LocationFrameWork
+#endif
 
 extension GCMasterModule {
     public var locationService: LocationServices? {

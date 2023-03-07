@@ -6,11 +6,21 @@
 //
 
 import Foundation
+#if canImport(GCDeviceInfo)
 import GCDeviceInfo
+#endif
+#if canImport(LocationFrameWork)
 import LocationFrameWork
+#endif
+#if canImport(GCDataBase)
 import GCDataBase
+#endif
+#if canImport(GCLocalCached)
 import GCLocalCached
+#endif
+#if canImport(GCNetworking)
 import GCNetworking
+#endif
 
 public extension GCMasterModule {
     func defaultSetupAllModule() {

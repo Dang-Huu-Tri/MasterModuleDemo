@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
+#if canImport(GCRouter)
 import GCRouter
+#endif
 
 public class LocationServicesRouterHandler: GCRouterProtocol {
     public static func registerRouterItems() {

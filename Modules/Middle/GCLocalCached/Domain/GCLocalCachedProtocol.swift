@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(GCDataBase)
 import GCDataBase
+#endif
 
 @objc public protocol GCLocalCachedProtocol: NSObjectProtocol {
     func request()

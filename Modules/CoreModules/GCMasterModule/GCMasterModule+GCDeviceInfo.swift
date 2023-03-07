@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(GCDeviceInfo)
 import GCDeviceInfo
+#endif
 
 extension GCMasterModule {
     var deviceInfo: GCDeviceInfoProtocol? {
@@ -15,43 +17,43 @@ extension GCMasterModule {
 }
 
 extension GCMasterModule: GCDeviceInfoProtocol {
-    public var batteryInfo: GCDeviceInfo.GCBatteryInfoProtocol? {
+    public var batteryInfo: GCBatteryInfoProtocol? {
         return self.deviceInfo?.batteryInfo
     }
     
-    public var generalInfo: GCDeviceInfo.GCDeviceModelInfoProtocol? {
+    public var generalInfo: GCDeviceModelInfoProtocol? {
         return self.deviceInfo?.generalInfo
     }
     
-    public var bundleInfo: GCDeviceInfo.GCBundleInfoProtocol? {
+    public var bundleInfo: GCBundleInfoProtocol? {
         return self.deviceInfo?.bundleInfo
     }
     
-    public var displayInfo: GCDeviceInfo.GCDisplayInfoProtocol? {
+    public var displayInfo: GCDisplayInfoProtocol? {
         return self.deviceInfo?.displayInfo
     }
     
-    public var cellularInfo: GCDeviceInfo.GCCellularInfoProtocol? {
+    public var cellularInfo: GCCellularInfoProtocol? {
         return self.deviceInfo?.cellularInfo
     }
     
-    public var localizationInfo: GCDeviceInfo.GCLocalizationInfoProtocol? {
+    public var localizationInfo: GCLocalizationInfoProtocol? {
         return self.deviceInfo?.localizationInfo
     }
     
-    public var processInfo: GCDeviceInfo.GCProcessInfoProtocol? {
+    public var processInfo: GCProcessInfoProtocol? {
         return self.deviceInfo?.processInfo
     }
     
-    public var storageInfo: GCDeviceInfo.GCStorageInfoProtocol? {
+    public var storageInfo: GCStorageInfoProtocol? {
         return self.deviceInfo?.storageInfo
     }
     
-    public var diskInfo: GCDeviceInfo.GCDiskInfoProtocol? {
+    public var diskInfo: GCDiskInfoProtocol? {
         return self.deviceInfo?.diskInfo
     }
     
-    public func fileInfoWith(path: String, fileManager: FileManager) -> GCDeviceInfo.GCFileInfoProtocol? {
+    public func fileInfoWith(path: String, fileManager: FileManager) -> GCFileInfoProtocol? {
         return self.deviceInfo?.fileInfoWith(path: path, fileManager: fileManager)
     }
     

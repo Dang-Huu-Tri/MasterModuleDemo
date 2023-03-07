@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(GCRouter)
 import GCMasterModule
+#endif
 
 public class GeoComplySDK {
     public required init() {
