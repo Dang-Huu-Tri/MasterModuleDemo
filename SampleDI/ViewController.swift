@@ -21,6 +21,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var urlTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+#if canImport(GCDataBase)
+print("tridh2 test can import")
+#endif
         setupMasterModule()
 //        setupRouter()
     }

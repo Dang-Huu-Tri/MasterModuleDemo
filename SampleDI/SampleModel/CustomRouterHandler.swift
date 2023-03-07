@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
+#if canImport(GCRouter)
 import GCRouter
+#endif
 
 class CustomRouterHandler: GCRouterProtocol {
     static func registerRouterItems() {

@@ -6,7 +6,9 @@
 //
 
 import Foundation
+#if canImport(GCLocalCached)
 import GCLocalCached
+#endif
 
 class GCNetworking: NSObject, GCNetworkingProtocol {
     public var cache: GCLocalCachedProtocol?

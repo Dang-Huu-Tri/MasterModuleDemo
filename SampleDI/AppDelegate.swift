@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import GCRouter
+//import GCRouter
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
